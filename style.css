@@ -1,0 +1,59 @@
+.button {
+
+    --default: rgba(255, 255, 255, .2);
+
+    --active: #fff;
+
+    position: relative;
+
+    border: none;
+
+    outline: none;
+
+    background: none;
+
+    padding: 0;
+
+    -webkit-appearance: none;
+
+    -webkit-tap-highlight-color: transparent;
+
+    cursor: pointer;
+
+    transform: scale(var(--s, 1));
+
+    transition: transform .2s;
+
+    &:active {
+
+        --s: .96;
+
+    }
+
+    svg {
+
+        display: block;
+
+        fill: none;
+
+        stroke-width: var(--sw, 3px);
+
+        stroke-linecap: round;
+
+        stroke-linejoin: round;
+
+    }
+
+    .circle {
+
+        width: 76px;
+
+        height: 76px;
+
+        transform: rotate(-90deg);
+
+        circle {
+
+            &.default {
+
+                stroke: var(--default);
